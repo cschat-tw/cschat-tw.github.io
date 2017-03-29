@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+  margin: 0;
+  font-family: monospace;
+  background-color: black;
+}
+
+#wrap {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#wrap a {
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: green;
+  text-decoration: none;
+}
+
+#wrap a:hover {
+  color: lightgreen;
+  text-decoration: underline;
+}
+
