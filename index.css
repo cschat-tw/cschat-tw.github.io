@@ -2,11 +2,29 @@ html, body {
   height: 100%;
 }
 
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 body {
   display: table;
   width: 100%;
   margin: 0;
   font-family: monospace;
+  color: green;
   background-color: black;
 }
 
@@ -22,12 +40,19 @@ body {
   line-height: 48px;
   padding-left: 12px;
   padding-right: 12px;
-  color: green;
   text-decoration: none;
+  color: green;
 }
 
 #wrap a:hover {
   color: lightgreen;
   text-decoration: underline;
+}
+
+#wrap a:visited {
+  color: darkgreen;
+}
+
+#wrap q {
 }
 
